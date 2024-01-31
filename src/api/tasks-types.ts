@@ -6,13 +6,13 @@ export type TaskApiTypes = {
     order: number
     status: number
     priority: number
-    startDate: null | string
-    deadline: null | string
-    addedDate: null | string
+    startDate: null | Date
+    deadline: null | Date
+    addedDate: Date
 }
 
-export type TaskResponseUniversalType<D = {}> = {
-    data: D
+export type TaskResponseUniversalType<T = {}> = {
+    data: T
     messages: string[]
     fieldsErrors: string[]
     resultCode: number

@@ -26,7 +26,7 @@ export const CreateTasks = () => {
 
     useEffect(() => {
         taskstAPI.createTasks("c120798c-3062-4b8a-a1c9-0de81f13d59b","Nuevo Task")
-            .then(response => setState(response.data))
+            .then(response => setState(response.data.data.))
     }, [])
 
     return <div>{JSON.stringify(state)}</div>

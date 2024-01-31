@@ -1,11 +1,11 @@
 export type TodolistType = {
     id: string
     title: string
-    addedDate: string
+    addedDate: Date
     order: number
 }
-export type TodolistResponseUniversalType<D = {}> = {
-    data: D
+export type TodolistResponseUniversalType<T = {}> = {
+    data: T
     messages: string[]
     fieldsErrors: string[]
     resultCode: number
